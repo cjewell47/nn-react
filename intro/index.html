@@ -16,13 +16,16 @@
       name: 'Jeffrey',
       age: 24
     }
-    handleMouseOver(e){
+    handleMouseOver = (e) => {
       console.log(e.target, e.pageX);
     }
-    handleClick(e){
-      console.log(e.target);
+    handleClick = (e) => {
+      console.log(e.target, this.state);
+      this.setState({
+        age: 100
+      });
     }
-    handleCopy(e){
+    handleCopy = (e) => {
       console.log('Try being original for once');
     }
     render(){
