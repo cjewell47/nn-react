@@ -32,7 +32,7 @@ class App extends Component {
   }
   componentDidUpdate(prevProps, prevState, snapshot){
     console.log('component updated');
-    console.log(prevProps, prevState);
+    console.log('prevProps', prevProps, 'prevState', prevState);
   }
   render() {
     return (
